@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SinCity House Management</title>
+</head>
+<body>
+  <h1>Welcome to SinCity</h1>
+  
+  <p>What I can gather from you:<p>
+  <ul>
+    <li>Your ID is <%= session[:uid] %></li>
+    <li>Your Email is <%= session[:email] %></li>
+  </ul>
+  
+  <p><a href="/steward">Steward</a></p>
+  
+  <p><a href="/logout">Logout</a></p>
+</body>

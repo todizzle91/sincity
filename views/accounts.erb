@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+  <title>Admin - Accounts</title>
+</head>
+<body>
+  <h1>User Accounts</h1>
+  
+  <ul>
+  <% valid_emails.each do |email| %>
+    <li><%= email %></li>
+  <% end %>
+  </ul>
+</body>
+</html>
