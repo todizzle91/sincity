@@ -74,6 +74,13 @@ get '/admin/accounts' do
   erb :accounts, :locals => {:valid_emails => valid_emails}
 end
 
+post '/admin/accounts' do
+  new_email = params[:email]
+  users_coll.insert({"email" => new_email})
+  
+  redirect '/admin/accounts'
+end
+
 #-> STEWARD <-#
 
 get '/steward' do
